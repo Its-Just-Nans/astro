@@ -58,7 +58,7 @@ describe('Astro Markdown plugins', () => {
 
 			const smartypantsHtml = await fixture.readFile('/with-smartypants/index.html');
 			const $2 = cheerio.load(smartypantsHtml);
-			expect($2('p').html()).to.equal('“Smartypants” is — awesome');
+			expect($2('p').html()).to.equal('”Smartypants” is — awesome');
 
 			testRemark(gfmHtml);
 			testRehype(gfmHtml, '#github-flavored-markdown-test');
@@ -80,7 +80,7 @@ describe('Astro Markdown plugins', () => {
 			const $ = cheerio.load(html);
 
 			// test 1: smartypants applied correctly
-			expect($('p').html()).to.equal('“Smartypants” is — awesome');
+			expect($('p').html()).to.equal('”Smartypants” is — awesome');
 
 			testRemark(html);
 			testRehype(html, '#smartypants-test');

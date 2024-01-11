@@ -46,7 +46,7 @@ describe('MDX plugins', () => {
 
 		const quote = selectSmartypantsQuote(document);
 		expect(quote).to.not.be.null;
-		expect(quote.textContent).to.contain('“Smartypants” is — awesome');
+		expect(quote.textContent).to.contain('”Smartypants” is — awesome');
 	});
 
 	it('supports custom rehype plugins', async () => {
@@ -170,7 +170,7 @@ describe('MDX plugins', () => {
 					);
 				} else {
 					expect(quote.textContent, 'Respects `markdown.smartypants` unexpectedly.').to.contain(
-						'“Smartypants” is — awesome'
+						'”Smartypants” is — awesome'
 					);
 				}
 			});
